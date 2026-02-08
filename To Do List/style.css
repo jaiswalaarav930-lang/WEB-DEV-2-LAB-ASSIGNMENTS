@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+
+}
+
+.eachList{
+    display:  flex;
+    gap: 20px;
+
+}
+
+.eachList p{
+    font-size: 20px;
+}
+
+#todo{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;          
+    transform: translate(-50%, -50%);
+    background-color: papayawhip;
+}
+
+#inputBox{
+        width: 300px;
+        height: 36px;
+        font-size: 18px;
+        border: 2px solid #222;
+        border-radius: 12px;
+        padding: 6px 12px;
+        color: #111;
+        background-color: #fff;
+        transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.06s ease;
+}
+
+/* General input rules (kept for any other inputs) */
+input{
+        color: black;
+        background-color: white;
+}
+
+#inputBox:hover{
+        border-color: #3b82f6; /* blue-500 */
+}
+
+#inputBox:focus, #inputBox:focus-visible{
+    outline: none;
+    border-color: #2563eb; /* stronger blue */
+    box-shadow: 0 0 0 6px rgba(37,99,235,0.12);
+}
+
+#inputBox::placeholder {
+    color: gray;
+    font-style: italic;
+}
+ 
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: papayawhip;
+}
+
+button{
+    width: 100px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    background-color:darkviolet;
+
+}
+button:hover{
+    background-color: indigo;
+    color: white;
+    cursor: pointer;
+}
+
+#inputbar{
+    display: flex;
+    gap: 20px;
+    background-color: papayawhip;
+}
